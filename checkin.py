@@ -87,7 +87,7 @@ async def get_waf_cookies_with_playwright(account_name: str):
 		try:
 			print(f'[PROCESSING] {account_name}: Step 1: Access login page to get initial cookies...')
 
-			await page.goto('https://anyrouter.top/login', wait_until='networkidle')
+			await page.goto('https://husanai.com/login', wait_until='networkidle')
 
 			try:
 				await page.wait_for_function('document.readyState === "complete"', timeout=5000)
@@ -126,7 +126,7 @@ async def get_waf_cookies_with_playwright(account_name: str):
 def get_user_info(client, headers):
 	"""获取用户信息"""
 	try:
-		response = client.get('https://anyrouter.top/api/user/self', headers=headers, timeout=30)
+		response = client.get('https://husanai.com/api/user/self', headers=headers, timeout=30)
 
 		if response.status_code == 200:
 			data = response.json()
@@ -178,8 +178,8 @@ async def check_in_account(account_info, account_index):
 			'Accept': 'application/json, text/plain, */*',
 			'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
 			'Accept-Encoding': 'gzip, deflate, br, zstd',
-			'Referer': 'https://anyrouter.top/console',
-			'Origin': 'https://anyrouter.top',
+			'Referer': 'https://husanai.com/console',
+			'Origin': 'https://husanai.com',
 			'Connection': 'keep-alive',
 			'Sec-Fetch-Dest': 'empty',
 			'Sec-Fetch-Mode': 'cors',
@@ -200,7 +200,7 @@ async def check_in_account(account_info, account_index):
 		checkin_headers = headers.copy()
 		checkin_headers.update({'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'})
 
-		response = client.post('https://anyrouter.top/api/user/sign_in', headers=checkin_headers, timeout=30)
+		response = client.post('https://husanai.com/api/user/sign_in', headers=checkin_headers, timeout=30)
 
 		print(f'[RESPONSE] {account_name}: Response status code {response.status_code}')
 

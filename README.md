@@ -4,7 +4,7 @@
 
 **维护开源不易，如果本项目帮助到了你，请帮忙点个 Star，谢谢!**
 
-用于 Claude Code 中转站 Any Router 多账号每日签到，一次 $25，限时注册即送 100 美金，[点击这里注册](https://anyrouter.top/register?aff=gSsN)。
+用于 Claude Code 中转站 Any Router 多账号每日签到，一次 $25，限时注册即送 100 美金，[点击这里注册](https://husanai.com/register?aff=gSsN)。
 
 ## 功能特性
 
@@ -25,7 +25,7 @@
 2. **API User**: 用于请求头的 new-api-user 参数
 
 #### 获取 Cookies：
-1. 打开浏览器，访问 https://anyrouter.top/
+1. 打开浏览器，访问 https://husanai.com/
 2. 登录你的账户
 3. 打开开发者工具 (F12)
 4. 切换到 "Application" 或 "存储" 选项卡
